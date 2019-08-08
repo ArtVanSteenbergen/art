@@ -1,0 +1,83 @@
+*,
+*:before,
+*:after
+	box-sizing: border-box
+	font-family: $font-stack
+body
+	display: grid
+	margin: 0
+	padding: 0
+	grid-template-areas: 'header''main''footer'
+	grid-template-rows: auto 100% auto
+	font-size: 100%
+
+body, h1, h2, h3, h4, h5, h6
+	font-size-adjust: 0.5
+
+.btn
+	background: $main-color
+	font-size: bold
+	text-align: center
+	position: relative
+	display: block
+	color: white
+	padding: 1em 2em
+	box-shadow: 1px 1px darken($main-color, 5%), 2px 2px darken($main-color, 10%), 3px 3px darken($main-color, 15%),4px 4px darken($main-color, 20%),5px 5px darken($main-color, 25%), 6px 6px darken($main-color, 30%),7px 7px darken($main-color, 35%)
+	&:hover
+		background: darken($main-color, 5%)
+		box-shadow: 1px 1px darken($main-color, 5%), 2px 2px darken($main-color, 15%),3px 3px darken($main-color, 25%),4px 4px darken($main-color, 35%)
+		transform: translate(3px, 3px)
+	&:active
+		background: darken($main-color, 15%)
+		box-shadow: 1px 1px darken($main-color, 35%)
+		transform: translate(6px, 6px)
+
+h1
+	font-size: 2em
+	line-height: 1.25
+	color: $main-color
+@media (min-width: 43.75em) 
+	h1
+		font-size: 2.5em
+		line-height: 1.125
+@media (min-width: 56.25em)
+	h1
+		font-size: 3em
+		line-height: 1.05
+
+h2
+	font-size: 1.625em
+	color: $main-color
+	line-height: 1.15384615
+@media (min-width: 43.75em)
+	h2
+		font-size: 2em
+		line-height: 1.25
+@media (min-width: 56.25em)
+	h2
+		font-size: 2.25em
+		line-height: 1.25
+
+h3
+	font-size: 1.375em
+	line-height: 1.13636364
+@media (min-width: 43.75em)
+	h3
+		font-size: 1.5em
+		line-height: 1.25
+@media (min-width: 56.25em)
+	h3
+		font-size: 1.75em
+		line-height: 1.25
+
+h4
+	font-size: 1.125em
+	line-height: 1.11111111
+@media (min-width: 43.75em)
+	h4
+		line-height: 1.22222222
+
+a
+	font-weight: bold
+	color: $main-color
+	text-decoration: none
