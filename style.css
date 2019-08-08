@@ -100,7 +100,8 @@ header nav ul li a {
 main {
   grid-area: main;
   font-size: 1em;
-  line-height: 1.25; }
+  line-height: 1.25;
+  padding-bottom: 3em; }
 main section {
   margin: 0 auto;
   width: 43.75em;
