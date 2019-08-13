@@ -10,9 +10,16 @@ nav
 			a
 				color: $nav-link-color
 				display: block
-				padding: 1em
+				padding: 0.5em
 				&:hover
 					background: darken($main-color, 5%)
 				&:active
 					background: darken($main-color, 15%)
+
+@media (min-width: 43.75em) 
+	nav
+		ul
+			li
+				a
+					padding: 1em
 
