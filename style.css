@@ -151,7 +151,8 @@ main section article #snap-filters {
   border-radius: 1em;
   display: flex; }
 main section article #snap-filters img {
-  width: 50%; }
+  width: 50%;
+  height: auto; }
 
 @media (min-width: 43.75em) {
   main {
