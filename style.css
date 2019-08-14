@@ -86,8 +86,6 @@ header {
   position: sticky;
   top: 0;
   z-index: 999; }
-header nav {
-  box-shadow: 1px 1px #12ace0, 2px 2px #109ac8, 3px 3px #0e88b0, 4px 4px #0c7599, 5px 5px #0a6381, 6px 6px #08516a, 7px 7px #073f52; }
 header nav ul {
   margin: 0;
   padding: 0;
@@ -114,13 +112,17 @@ main {
   line-height: 1.25;
   padding-bottom: 3em; }
 main section {
-  min-height: 100vh; }
+  min-height: 100vh;
+  background: url("img/lines.png") center top;
+  background-size: 100%; }
 main section h2 {
   margin: 0;
   padding-left: 1em; }
 main section:nth-child(odd) {
   background: url("img/underwater.jpg") center center;
   background-size: cover; }
+main section:nth-child(odd) h2 {
+  color: black; }
 main section:first-child {
   background: url("img/windmill.jpg") center center fixed;
   background-size: cover;
@@ -131,7 +133,8 @@ main section:first-child h1 {
   color: white;
   padding-top: 20vh; }
 main section:first-child p {
-  color: white; }
+  color: white;
+  font-size: 1.2em; }
 main section article {
   margin: 0 auto;
   width: 43.75em;
@@ -143,6 +146,12 @@ main section article img.screen {
   background: #000;
   border-radius: 1em;
   position: relative; }
+main section article #snap-filters {
+  border: 1em solid #000;
+  border-radius: 1em;
+  display: flex; }
+main section article #snap-filters img {
+  width: 50%; }
 
 @media (min-width: 43.75em) {
   main {

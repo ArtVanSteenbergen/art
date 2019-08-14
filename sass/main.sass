@@ -5,12 +5,16 @@ main
 	padding-bottom: 3em
 	section
 		min-height: 100vh
+		background: url('img/lines.png') center top
+		background-size: 100%
 		h2
 			margin: 0
 			padding-left: 1em
 		&:nth-child(odd)
 			background: url('img/underwater.jpg') center center
 			background-size: cover
+			h2
+				color: black
 
 		&:first-child
 			background: url('img/windmill.jpg') center center fixed
@@ -23,6 +27,7 @@ main
 				padding-top: 20vh
 			p
 				color: white
+				font-size: 1.2em
 		article
 			margin: 0 auto
 			width: 43.75em
@@ -34,6 +39,12 @@ main
 				background: #000
 				border-radius: 1em
 				position: relative
+			#snap-filters
+				border: 1em solid #000
+				border-radius: 1em
+				display: flex
+				img 
+					width: 50%
 
 @media (min-width: 43.75em)
 	main
