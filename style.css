@@ -86,6 +86,8 @@ header {
   position: sticky;
   top: 0;
   z-index: 999; }
+header nav {
+  box-shadow: 1px 1px #12ace0, 2px 2px #109ac8, 3px 3px #0e88b0, 4px 4px #0c7599, 5px 5px #0a6381, 6px 6px #08516a, 7px 7px #073f52; }
 header nav ul {
   margin: 0;
   padding: 0;
